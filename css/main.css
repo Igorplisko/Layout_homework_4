@@ -1,0 +1,294 @@
+* { 
+	box-sizing: border-box;
+	
+}
+body { 
+  color: #6d6d6d;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 500;
+}
+
+.main {
+  max-width: 1300px;
+  margin: 0 auto;
+  min-width: 800px;
+  background-color: #ffffff;
+  padding-top: 25px;
+}
+
+h1{
+ font-size: 40px; 
+ line-height: 50px;
+ color: #7ea2b3;
+ text-transform: uppercase;
+ text-align: center;
+ letter-spacing: 0.09em;
+}
+
+h2 {
+  font-size: 24px; 
+  line-height: 30px;
+  color: #7ea2b3;
+  letter-spacing: 0.05em;
+  margin: 0;
+  padding-top: 4%;
+}
+
+
+.mainly {
+  padding: 8px 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 80px;
+ }
+
+.container:nth-child(2) {
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+.container:last-child {
+  margin-bottom: 50px;
+}
+
+.img_content{   
+  display: flex;
+  align-items: stretch;
+}
+
+
+.container>.block_text {
+    padding: 45px 7% 60px;
+    margin: 40px 0 -40px -80px;
+    width: 57%;
+  box-shadow: -15px 10px 32px #aeb7bb7a;
+  background: #f6fcff;
+  
+}
+.block_text> p {
+  letter-spacing: 0.05px;
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 1%;
+}
+
+
+.reverse {
+flex-direction: row-reverse;
+}
+
+.green_button {
+  text-decoration: none;
+  display: inline-block;
+  height: 50px;
+  background: #97b621;
+  padding: 14px 30px;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 25px;
+  letter-spacing: 0.09em;
+
+
+}
+
+h1, h2, a {
+  font-family: 'Oswald', sans-serif;
+}
+
+
+.white_button {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  left: 40.5%;
+  top: 20px;
+  height: 50px;
+  background: #fff;
+  padding: 13px 35px 0 49px;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #97b621;
+  border-radius: 25px;
+  border: 2px solid #97b621;
+  letter-spacing: 0.06em;
+}
+
+
+.white_button::before {
+ content:"";
+ border: 10px solid transparent;
+ border-left: 10px solid ;
+ width: 0;
+ height: 0;
+ position: absolute;
+ left: 30px;
+ bottom: 13px;
+}
+
+.bottom_container {
+  display: flex;
+  justify-content: space-around;
+  padding: 1px 65px 50px;
+}
+
+
+.food_menu {
+  text-align: center;
+
+ 
+}
+
+.bottom_btn {
+  text-decoration: none;
+  display: inline-block;
+  height: 40px;
+  background: #97b621;
+  padding: 10px 68px;
+  font-size: 13px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 25px;
+  letter-spacing: 0.09em;
+  font-weight: bold;
+  box-shadow: -8px 15px 29px #aeb7bb7a;
+}
+
+
+.food_list {
+  background: #f7f9ee;
+  margin-top: 66px;
+
+}
+
+h3  {
+ font-size: 40px; 
+ line-height: 50px;
+ color: #7ea2b3;
+ text-transform: uppercase;
+ text-align: center;
+ padding: 41px 0px 35px;
+ margin: 0;
+}
+
+h4 {
+ color: #7ea2b3;
+ font-size: 24px; 
+ line-height: 30px;
+ margin: 6% 0 8%;
+}
+
+img {
+  max-width: 100%;
+
+}
+.block_text {
+  min-width: 50%;
+}
+
+.container:nth-child(2)> .block_text {
+  margin-right: -80px;
+  box-shadow: 15px 10px 32px #aeb7bb7a;
+  min-width: 50%;
+}
+span{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /*background: rgba(0,0,0,0.6);*//* Это я оставил для себя */
+  background-color: #323f4c;
+  opacity: 0.6;
+  display: none;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  animation: fade 1.9s linear forwards;
+  padding: 77px 27px;
+}
+
+
+.bottom_pictures {
+
+  position: relative;
+  display: inline-block;
+}
+
+.bottom_pictures:hover span{
+  display: block;
+  cursor: pointer;
+  color: #fff;
+}
+
+
+
+
+
+@media (max-width: 850px) {
+ 
+
+.mainly {
+  padding: 0% 3% 0 3%;
+  margin: 0;
+}
+
+main {
+  min-width: 200px;
+  padding: 0;
+}
+
+.white_button {
+  margin-left: -4%;
+}
+
+.container:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  padding-left: 7%;
+}
+
+.container>.block_text {
+  background-color: #f6fcff;
+  margin: 0;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 350px;
+
+}
+p {
+  font-size: 34px;
+  line-height: 24px;
+
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4%;
+      
+}
+
+img {
+    width: 100%;
+}
+
+
+}
+
+/*.img {
+  display: block;
+}*/
